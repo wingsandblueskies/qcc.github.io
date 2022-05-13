@@ -1,0 +1,124 @@
+/* COMMON CSS */
+html,body {
+    height: 100%;
+}
+
+.navbar1{
+  font-size: 18px;
+  clear:both;
+}
+
+
+.tourdesc{
+  width:100%;
+  clear:both;
+}
+
+.tourdesc > p {
+  color:black;
+  font-size: 12px;
+}
+
+
+.minibox1 > img {
+  width:26%;
+  border: 1px solid black;
+  float:left;
+  margin: 1% 2% 3% 7%;
+}
+
+.minibox2 {
+  width:25%;
+  border: 1px solid black;
+  margin: 1% 1% 1% 1%;
+  padding-right: 6px;
+  float: left;
+
+}
+
+.minibox2text {
+  border:3px solid lightblue;
+  height: 16vw;
+  background-color:rgb(237,226,211);
+  width: 100%;
+  text-align: center;
+  font-size: .9em;
+  overflow-y:auto;
+  color:black;
+  float: left;
+}
+
+
+.minibox3 > img {
+  width:26%;
+  border: 1px solid black;
+  float:left;
+  margin: 1% 2% 3% 3%;
+}
+
+
+/* INDEX.HTML CSS */
+.pinkbox1 {
+width: 100%;
+background-color: lightpink;
+border: 1px solid black;
+padding: 1%;
+}
+
+.pinkbox1 > h5, p {
+color: white;
+}
+
+.pinkboxsubpics{
+  border:2px solid purple;
+}
+
+.pinkbox1sub1{
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 2vh;
+}
+
+.pinkbox1sub2{
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 2vh;
+  flex-direction: row-reverse;
+}
+
+figure {
+  color: white;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.overflow1 {
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+}
+
+.newsfeed > h4 {
+  margin: 0;
+}
+
+.table1 th {
+  background-color: lightgreen;
+}
+
+.tablered {
+  background-color: lightpink;
+}
+
+.contact1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.promovid{
+  width="100%";
+  height: 50vh;
+}
+
+/* HIKING.HTML CSS */
