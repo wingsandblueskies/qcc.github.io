@@ -38,7 +38,7 @@ margin-top: 7%;
 
 .innerbox1 img{
   width: 50%;
-  height: 30%;
+  height: 40%;
 }
 
 .box2{
@@ -60,7 +60,7 @@ margin-top: 7%;
 
 .innerbox2 img{
   width: 50%;
-  height: 30%;
+  height: 40%;
 }
 
 .modal1{
@@ -92,7 +92,7 @@ pointer-events: none;
   text-align: center;
   align-content: center;
   width: 60%;
-  height: 50%;
+  height: 50vw;
   margin-left: 17%;
 }
 
@@ -102,19 +102,18 @@ pointer-events: none;
 }
 
 .innermodal1 h2{
-background-color:lightpink;
+background-color:red;
 color: white;
 }
 
 .innermodal1 p{
-  background-color:purple;
+  background-color:lightgray;
   width: 25%;
   position: absolute;
 }
 
 .innermodal1 img{
 width: 45%;
-height: 45%;
 }
 
 /* MODAL 2 CSS */
@@ -152,12 +151,12 @@ pointer-events: none;
 }
 
 .innermodal2 h2{
-background-color:lightpink;
+background-color:purple;
 color: white;
 }
 
 .innermodal2 p{
-  background-color:purple;
+  background-color:lightgray;
   width: 25%;
   position: absolute;
 }
