@@ -1,0 +1,460 @@
+body{
+  background-color: lightyellow;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* header section */
+.headersection{
+  height:300px;
+  /* border:2px solid; */
+  padding: 3%
+}
+
+.logo img{
+    width: 25%;
+    height: 90%;
+    float: left;
+    /* border: 2px solid red; */
+    animation: pulselogo 5s;
+    animation-iteration-count: infinite;
+  }
+
+
+  @keyframes pulselogo {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+    }
+
+  .maintitle{
+    width: 68%;
+    height: 45%;
+    float: left;
+    /* border: 2px solid lightblue; */
+    margin-left: 3%;
+    margin-top: 1%;
+    font-family: cursive;
+    color: rgb(238, 188, 29);
+    font-size: 2em;
+    font-style: italic;
+    animation: flipin1 2s;
+  }
+
+  @keyframes flipin1{
+    0% {transform: skew(15deg, 15deg)
+      rotateX(-180deg)};
+    100% {width: 100%};
+
+  }
+
+  .subtitle{
+    width: 68%;
+    height: 34%;
+    float: left;
+    /* border: 2px solid green; */
+    margin-left: 3%;
+    margin-top: 2%;
+    animation: flipin2 2s;
+  }
+
+  @keyframes flipin2{
+    0% {transform: skew(-15deg, -15deg)
+      rotateX(-180deg)};
+    100% {width: 100%};
+  }
+
+
+/* slidbar section */
+.slidewrapper{
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slidebar{
+  width:300%;
+  animation: slidebar 30s;
+  animation-iteration-count: infinite;
+}
+
+.slide {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+
+@keyframes slidebar{
+  0% {margin-left: 0%}
+  20% {margin-left: 0%}
+  25% {margin-left: -100%}
+  45% {margin-left: -100%}
+  50% {margin-left: -200%}
+  70% {margin-left: -200%}
+  75% {margin-left: -100%}
+  95% {margin-left: -100%}
+  100% {margin-left: 0%}
+}
+
+.slide1{
+background-color: orange;
+}
+
+.slide2{
+background-color: green;
+}
+
+.slide3{
+background-color: powderblue;
+}
+
+/* Hero Image Box */
+.heroimagebox{
+height:75vh;
+position: relative;
+}
+
+.heroimagebox img {
+  height:100%;
+  width:100%;
+}
+
+.herosmallbox {
+  border: 3px solid white;
+  background-color: lightgray;
+  text-align: leftr;
+  font-size:1.1vw;
+  height: 20%;
+  width: 25%;
+  padding: 3% 5% 5% 5%;
+  position: absolute;
+  top:25%;
+  margin-left: 10%;
+}
+
+/* twobyonewrapper */
+
+.twobyonewrapper{
+width: 100%;
+height: 50vh;
+/* border: 2px solid red; */
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.flowerbox{
+background-image:linear-gradient(230deg, rgba(31,28,28,1) 0%, rgba(248,248,248,0.25) 50%),url('./images/intro_img1.jpg');
+background-size:contain;
+width: 20vw;
+margin: 5%;
+position: relative;
+}
+
+.flowerinner{
+  color: white;
+  border: .5px solid lightgreen;
+  position: absolute;
+  top:10%;
+  left:10%;
+  font-size: 1vw;
+  max-width: 60%
+
+}
+
+.textbox{
+width: 45vw;
+background: linear-gradient(230deg, rgba(31,28,28,1) 0%, rgba(248,248,248,0.25) 50%);
+border: .5px solid lightgreen;
+color: green;
+margin: 5%;
+font-size: 1.2vw;
+padding: 2%;
+}
+
+
+
+/* PRODUCT SECTION */
+
+.productrow{
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+}
+
+.productrow button {
+  color: white;
+  background-color: black;
+  padding: 4%;
+  position: relative;
+}
+
+.item{
+  width: 30%;
+  padding: 2%;
+  text-align: center;
+  float:left;
+}
+
+.item img {
+  width: 75%;
+}
+
+.item h4{
+  color:rgb(238, 188, 29);
+  font-size: 12px;
+}
+
+.button:hover {
+  background-color: gray;
+  }
+
+.tooltip{
+  position: relative;
+}
+
+.tooltiptext{
+  background-color: lightgray;
+  margin-right:36%;
+  margin-left:36%;
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  margin-left: 40%;
+  text-align: center;
+}
+
+.tooltip:hover .tooltiptext{
+  display: block;
+}
+
+/* ITEM MODAL SECTION */
+.itemmodal{
+  opacity: 0;
+  background-color: white;
+  width: 30%;
+  position: absolute;
+  padding: 0% 5% 0% 5%;
+  margin-left: 30%;
+  margin-right: 20%;
+  bottom: -10;
+  pointer-events: none;
+    border: 2px solid red;
+}
+
+.itemmodal1:target{
+  opacity:1;
+  pointer-events: all;
+}
+
+.itemmodal2:target{
+  opacity:1;
+  pointer-events: all;
+}
+.itemmodal3:target{
+  opacity:1;
+  pointer-events: all;
+}
+
+.itemmodel hr {
+  color:white;
+}
+
+/* NEUTRAL MODAL STRUCTURE */
+
+.xbutton {
+  font-size: 3vh;
+  height: 8%;
+  width: 7%;
+  padding-top: 2%;
+  font-family: arial;
+  position:absolute;
+  background-color: lightgrey;
+  top:0;
+  right:0;
+  text-align: center;
+}
+
+.xbutton a{
+  text-decoration: none;
+}
+
+.modaltop {
+  display: flex;
+  flex-direction: row;
+
+}
+.modalul img {
+  width: 100%;
+}
+
+.modalur{
+  text-align: left;
+  width: 100%;
+}
+
+.modalbottom{
+  background-color: lightgray;
+  width: 100%;
+  padding-top: 1%;
+  padding-right: 8.5%;
+  padding-left: 8.5%;
+  margin-left: -8.5%;
+  bottom: -10%;
+  text-align: left;
+}
+
+  .modalbottom button {
+      padding: 3%;
+      margin-bottom: 3%;
+      background-color: white;
+      border: none;
+      color: black;
+  }
+
+  .modalbottom a {
+    text-decoration: none;
+  }
+
+  /* GIFT SECTION */
+
+  .giftrow{
+    width: 100%;
+    display: flex;
+    /* border: 2px solid red; */
+  }
+
+  .giftrow button {
+    color: white;
+    background-color: black;
+    padding: 4%;
+    position: relative;
+  }
+
+  .gift{
+    width: 30%;
+    padding: 2%;
+    text-align: center;
+    float:left;
+  }
+
+  .gift h4{
+    color: rgb(238, 188, 29);
+    font-size: 12px;
+  }
+
+  .gift img {
+    width: 75%;
+  }
+
+
+  /* GIFT MODAL SECTION */
+  .giftmodal{
+    opacity: 0;
+    background-color: white;
+    width: 30%;
+    position: absolute;
+    padding: 0% 5% 0% 5%;
+    margin-left: 30%;
+    margin-right: 20%;
+    bottom: -10;
+    pointer-events: none;
+    /* border: 2px solid red; */
+  }
+
+  .giftmodal1:target{
+    opacity:1;
+    pointer-events: all;
+  }
+
+  .giftmodal2:target{
+    opacity:1;
+    pointer-events: all;
+  }
+  .giftmodal3:target{
+    opacity:1;
+    pointer-events: all;
+  }
+
+  .giftmodal hr {
+    color:white;
+  }
+
+  .giftmodal button {
+    padding: 3%;
+    margin-bottom: 3%;
+    background-color: white;
+    border: none;
+    color: black;
+    }
+
+/* FOOTER SECTION */
+.footer{
+  font-family: arial;
+  background-color: black;
+  color: white;
+  height:100%;
+  width: 100%;
+  /* border-radius: 1px solid red; */
+}
+
+.footer hr h2 h3 h4{
+  color: white;
+}
+
+.footer p a{
+  color: white;
+  text-decoration: none;
+}
+
+.navwrapper {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.navwrapper nav{
+  height: 25%;
+  width: 25vw;
+  font-size: 1em;
+  justify-content: space-between;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+
+.connectwrapper {
+  height: 40px;
+  width: 35%;
+  position: absolute;
+  right: 0%;
+  /* border: 1px solid red; */
+}
+
+.socialmediaiconwrapper{
+  display: inline;
+  height: 25%;
+  /* border: 1px solid blue; */
+}
+
+.socialmediaiconwrapper img{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.socialmediaiconwrapper img:hover{
+  background-color: white;
+  border-radius: 50%;
+}
+.lowertextbox{
+  padding-top: 10%;
+  padding-bottom: 1%;
+  font-size: 9px;
+  text-align: center;
+  width: 100%;
+  height:10vh;
+
+}
