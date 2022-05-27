@@ -1,0 +1,144 @@
+body{
+    background-color:rgba(163, 221, 223, 0.808);
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+
+body h3,h1{
+    font-weight:bolder;
+    font-family:Arial;
+}
+
+
+.mainbox{
+    margin: auto;
+    width: 60%;
+    background-color:beige;
+    margin-bottom: 5%;
+
+}
+
+/* MAIN - TOP SECTION SECTION */
+.scorebox {
+    float:left;
+    width: 15vw;
+    background-color: lightpink;
+    border-radius: 7%;
+    margin: 3%;
+    padding: 1%;
+    text-align: center;
+}
+
+.scorebox p {
+    line-height: .5em;
+    font-weight:bolder;
+    font-family:Arial;
+    font-size: .8em;
+}
+
+.resetbutton{
+    background-color: lightpink;
+    width: 15vw;
+    border-style: none;
+    border-radius: 7%;
+    text-align: center;
+    font-size: .8em;
+    float: right;
+    margin: 3%;
+    padding: 4%;
+}
+
+
+.resetbutton:hover{
+    background-color: lightgrey;
+}
+
+
+/* MAINBOX CENTER SECTION */
+
+.guessbox {
+    width: 75%;
+    background-color: rgb(186, 171, 138);
+    border-radius: 10%;
+    text-align: center;
+    align-items: center;
+    clear: both;
+    padding: 3%;
+    margin: auto;
+}
+
+.guessboximgwrapper {
+    width: 25%;
+    height: 25%;
+    margin-top: 2%;
+    margin: auto;
+    position: relative;
+    border: 1x solid red;
+}
+
+.guessbox img {
+    width: 100%;
+}
+
+.guessbox input {
+    width: 50%;
+    border-radius: 12px;
+    border: none;
+    padding: 2%;
+    margin: 5% 2% 2% 2%;
+    text-align: center;
+}
+
+.guessbox p {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 75%;
+    color: white;
+    font-family:Arial;
+    text-align: center;
+    font-size: 1.1em;
+    /* line-height: 25%; */
+}
+
+.checkbutton,.tryagainbutton,.playagainbutton{
+    background-color:darkseagreen;
+    color: white;
+    font-family:Arial;
+    text-align: center;
+    width: 25%;
+    border-radius: 12px;
+    border: none;
+    padding: 2%;
+    margin: 3% 2% 2% 2%;
+}
+
+
+.checkbutton:hover, .tryagainbutton:hover, .playagainbutton:hover{
+    background-color: lightgrey;
+}
+
+.historybox {
+    background-color:rgba(163, 221, 223, 0.808);
+    font-family:Arial;
+    font-weight: bolder;
+    font-size: .8em;
+    text-align: left;
+    width: 40%;
+    border-radius: 12px;
+    border: none;
+    padding: .5% 3% 2% 3%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 0%;
+}
+
+.historybox ul{
+padding-left: 5%;    
+}
+
+.answer{
+
+}
+ 
